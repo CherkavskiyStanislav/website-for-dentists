@@ -1,9 +1,11 @@
+@import '_variables';
+
 main{
     .second-screen {
         display: none;
     }
     .third-screen {
-        background: linear-gradient(180deg, #A1C7D4 0%, #fff 100%);
+        background: linear-gradient(180deg, $secondaryColor 0%, $whiteColor 100%);
         padding: 10px 8px 0;
         color: #0F2D4A;
     
@@ -121,14 +123,14 @@ main{
                 width: 130px;
                 height: 57px;
                 margin: 0 auto;
-                background: #46B1DE;
+                background: $mainColor;
                 border-radius: 8px;
                 border: none;
                 text-align: center;
                 font-weight: 600;
                 font-size: 17px;
                 line-height: 140%;
-                color: #FFFFFF;
+                color: $whiteColor;
             }
         }
     }

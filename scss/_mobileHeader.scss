@@ -1,5 +1,7 @@
+@import '_variables';
+
 header {
-    background-image: url('../../../img/figma_imge/background_img.jpg');
+    background-image: $background-img-path;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -31,11 +33,11 @@ header {
     
     h1 {
         margin: 0;
-        font-family: 'Sofia Sans';
+        font-family: $fontSofia;
         font-size: 17px;
         font-weight: normal;
         text-transform: uppercase;
-        color: #46B1DE;
+        color: $mainColor;
     
         span {
             font-size: 12px;
@@ -78,7 +80,7 @@ header {
         text-align: center;
     
         span {
-            color: #46B1DE;
+            color: $mainColor;
         }
     }
     
@@ -97,8 +99,8 @@ header {
     
         a {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             width: 100px;
             height: 35px;
             text-transform: uppercase;
@@ -109,15 +111,15 @@ header {
         }
     
         .call_butt {
-            color: #fff;
-            background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
-            box-shadow: 0px 1.14444px 5.72222px #46B1DE;
+            color: $whiteColor;
+            background: linear-gradient(97.59deg, $mainColor 9.8%, #0591CC 95.1%);
+            box-shadow: 0px 1.14444px 5.72222px $mainColor;
             border-radius: 4.57778px;
         }
     
         .serv_butt {
-            color: #46B1DE;
-            background: #FFFFFF;
+            color: $mainColor;
+            background: $whiteColor;
             mix-blend-mode: normal;
             border: 1px solid #DDE0DC;
             box-shadow: 0px 2px 10px #DDE0DC;

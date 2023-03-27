@@ -1,3 +1,5 @@
+@import '_variables';
+
 main {
     .second-screen {
         h2 {
@@ -10,7 +12,7 @@ main {
       
           span {
             font-weight: 600;
-            color: #46B1DE;
+            color: $mainColor;
           }
         }
       
@@ -26,7 +28,7 @@ main {
         .cards_two {
           width: 500px;
           padding: 10px;
-          background: #A1C7D4;
+          background: $secondaryColor;
           border-radius: 12px;
           margin: 20px auto 0;
           display: flex;
@@ -47,7 +49,7 @@ main {
             align-items: center;
             width: 480px;
             height: 80px;
-            background: #FFFFFF;
+            background: $whiteColor;
             border-radius: 8px;
       
             h3 {
@@ -58,7 +60,7 @@ main {
               font-weight: 700;
               font-size: 15px;
               line-height: 16px;
-              color: #46B1DE;
+              color: $mainColor;
       
               span {
                 font-weight: 400;
@@ -87,7 +89,7 @@ main {
           line-height: 29px;
           font-weight: 400;
           span {
-            color: #46B1DE;
+            color: $mainColor;
           }
         }
       
@@ -111,7 +113,7 @@ main {
               font-weight: 700;
               font-size: 15px;
               line-height: 16px;
-              color: #46B1DE;
+              color: $mainColor;
             }
       
             p {
@@ -204,14 +206,14 @@ main {
             button {
               width: 130px;
               height: 57px;
-              background: #46B1DE;
+              background: $mainColor;
               border-radius: 8px;
               border: none;
               text-align: center;
               font-weight: 600;
               font-size: 17px;
               line-height: 140%;
-              color: #FFFFFF;
+              color: $whiteColor;
             }
           }
         }

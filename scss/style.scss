@@ -1,4 +1,18 @@
-$mainColor: #46B1DE;
+@import '_variables';
+
+@mixin triangle ($width, $color) {
+	width: 0;
+	height: 0;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+	border-right: $width solid transparent;
+	border-left: $width solid transparent;
+	border-top: $width solid $color;
+}
+
+.triangle {
+	@include triangle(20px, $mainColor);
+}
 
 * {
     box-sizing: border-box;
@@ -9,20 +23,18 @@ $mainColor: #46B1DE;
   }
   
   html {
-    font-family: 'Roboto';
+    font-family: $fontFamily;
   }
   
   @font-face {
-    font-family: 'Sofia Sans';
-    src: 
-      url(../../fonts/Sofia_sans/SofiaSans[wdth,wght].woff2) 
-      format("woff2");
+    font-family: $fontSofia;
+    src: $sofia-sans-font-path;
     font-style: normal;
     font-weight: 400;
-  }
+}
   
   a {
-    color: #000;
+    color: $blackColor;
     text-decoration: none;
     
     &:hover {
@@ -47,34 +59,33 @@ $mainColor: #46B1DE;
   .footer_navigation {
     a, p {
       &:hover {
-        color: #fff;
+        color: $whiteColor;
       }
     }
   }
   
   // mobile
   @media screen and (max-width: 600px) {
-    @import './mobileFooter';
-    @import './mobileMain';
-    @import './mobileHeader';
+    @import '_mobileFooter';
+    @import '_mobileMain';
+    @import '_mobileHeader';
 }
   
 // tablet
   @media screen and (min-width: 601px) and (max-width: 1023px) {
-    @import './tabletFooter';
-    @import './tabletMain';
-    @import './tabletHeader';
+    @import '_tabletFooter';
+    @import '_tabletMain';
+    @import '_tabletHeader';
 }
   
 // laptop
     @media screen and (min-width: 1024px) {
-    @import './laptopFooter';
-    @import './laptopMain';
-    @import './laptopHeader';
+    @import '_laptopFooter';
+    @import '_laptopMain';
+    @import '_laptopHeader';
 }
 
 // burger
-
-    @media screen and (max-width: 768px) {
-    @import './burger';
+  @media screen and (max-width: 768px) {
+    @import '_burger';
 }

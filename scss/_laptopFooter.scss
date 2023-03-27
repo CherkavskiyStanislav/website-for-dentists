@@ -1,5 +1,7 @@
+@import '_variables';
+
 footer {
-    background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+    background: linear-gradient(91.75deg, $secondaryColor 18.06%, #0680AA 98.16%);
     color: #0F2D4A;
     height: 400px;
     display: flex;
@@ -21,7 +23,7 @@ footer {
         }
         h2 {
             margin: 0;
-            font-family: 'Sofia Sans';
+            font-family: $fontSofia;
             font-size: 38px;
             font-weight: 400;
             text-transform: uppercase;
@@ -74,7 +76,7 @@ footer {
     }
 
     .footer_column__second {
-        color: #fff;
+        color: $whiteColor;
 
         h3 {
             font-weight: 600;
@@ -103,7 +105,7 @@ footer {
 
             > a {
                 position: relative;
-                color: #fff;
+                color: $whiteColor;
                 left: 40px;
                 &:hover::after {
                     position: absolute;

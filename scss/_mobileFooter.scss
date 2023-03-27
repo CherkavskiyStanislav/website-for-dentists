@@ -1,5 +1,7 @@
+@import '_variables';
+
 footer {
-    background: linear-gradient(180deg, #fff 0%, #0680AA 100%);
+    background: linear-gradient(180deg, $whiteColor 0%, #0680AA 100%);
     padding: 30px 8px 0;
     height: 100vh;
     position: relative;
@@ -18,7 +20,7 @@ footer {
     align-items: center;
     h2 {
         margin: 0 5px;
-        font-family: 'Sofia Sans';
+        font-family: $fontSofia;
         font-size: 27px;
         font-weight: 400;
         text-transform: uppercase;
@@ -34,7 +36,7 @@ footer {
         margin-top: 21px;
         display: flex;
         justify-content: space-between;
-        font-family: 'Roboto';
+        font-family: $fontFamily;
         font-size: 14px;
         }      
     .footer_navigation {
@@ -64,7 +66,7 @@ footer {
         }
         
     .footer_column__second {
-        color: #FFF;
+        color: $whiteColor;
             h3 {
             margin: 44px 0 26.48px 0;
             font-size: 21px;
@@ -94,7 +96,7 @@ footer {
         
             > a {
             position: relative;
-            color: #FFF;
+            color: $whiteColor;
             padding-top: 13.04px;
             font-size: 17.1613px;
             line-height: 135%;

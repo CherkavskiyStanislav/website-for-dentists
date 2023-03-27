@@ -1,5 +1,7 @@
-.header {
-    background-image:  url('../../../img/figma_imge/background_img.jpg');
+@import '_variables';
+
+header {
+    background-image:  $background-img-path;
     background-repeat: no-repeat;
     background-size: cover;
     height: 683px;
@@ -32,10 +34,10 @@
 
     h1 {
         margin: 0;
-        font-family: 'Sofia Sans';
+        font-family: $fontSofia;
         font-size: 38px;
         text-transform: uppercase;
-        color: #46B1DE;
+        color: $mainColor;
         text-align: left;
         font-weight: 400;
 
@@ -123,7 +125,7 @@
             letter-spacing: 0.1em;
     
             span {
-                color: #46B1DE;
+                color: $mainColor;
             }
         }
         p {
@@ -142,8 +144,8 @@
         
             a {
                 display: flex;
-                align-items: center;
                 justify-content: center;
+                align-items: center;
                 width: 180px;
                 height: 60px;
                 text-transform: uppercase;
@@ -171,15 +173,15 @@
     }
     
     .call_butt{
-        color: #fff;
-        background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
-        box-shadow: 0px 1.14444px 5.72222px #46B1DE;
+        color: $whiteColor;
+        background: linear-gradient(97.59deg, $mainColor 9.8%, #0591CC 95.1%);
+        box-shadow: 0px 1.14444px 5.72222px $mainColor;
         border-radius: 4.57778px;
     }
     
     .serv_butt{
-        color: #46B1DE;
-        background: #FFFFFF;
+        color: $mainColor;
+        background: $whiteColor;
         mix-blend-mode: normal;
         border: 1px solid #DDE0DC;
         box-shadow: 0px 2px 10px #DDE0DC;
@@ -194,13 +196,13 @@
     
         .cards_style {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             gap: 3%;
             width: 280px;
             height: 120px;
             padding: 15px;
-            background: #FFFFFF;
+            background: $whiteColor;
             border: 1px solid #D8E1E1;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 8px;
@@ -209,7 +211,7 @@
                 font-size: 65px;
                 margin: 0;
                 font-weight: normal;
-                color: #46B1DE;
+                color: $mainColor;
             }
     
             p {

@@ -1,3 +1,5 @@
+@import '_variables';
+
 .burger {
   position: absolute;
   display: flex;
@@ -15,7 +17,7 @@
     content: "";
     width: 15px;
     height: 2px;
-    background-color: #000;
+    background-color: $blackColor;
     transition: all .3s linear;
   }
   
@@ -33,14 +35,14 @@
     }
     
     &::before {
-      background-color: #46B1DE;
+      background-color: $mainColor;
       transform: rotate(45deg);
       top: 9px;
     }
     
     &::after {
       bottom: 9px;
-      background-color: #46B1DE;
+      background-color: $mainColor;
       transform: rotate(-45deg);
     }
   }
@@ -50,5 +52,5 @@
   display: block;
   width: 15px;
   height: 2px;
-  background-color: #000;
+  background-color: $blackColor;
 }

@@ -1,18 +1,23 @@
-$main-color: #46B1DE;
-$secondary-color: #A1C7D4;
+@import '_variables';
+%title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 34px;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
 main {
     .second-screen {
         h2 {
             margin: 148px auto 0;
-            font-size: 34px;
-            line-height: 130%;
-            text-transform: uppercase;
-            font-weight: 400;
-            text-align: center;
+            @extend %title;
 
             span {
                 font-weight: 600;
-                color: $main-color;
+                color: $mainColor;
             }
 
             + p {
@@ -29,7 +34,7 @@ main {
         .cards_two {
             width: 1020px;
             height: 396px;
-            background: $secondary-color;
+            background: $secondaryColor;
             border-radius: 12px;
             margin: 50px auto 0;
             display: flex;
@@ -48,7 +53,7 @@ main {
                 padding: 0 20px;
                 width: 300px;
                 height: 176px;
-                background: #FFFFFF;
+                background: $whiteColor;
                 border-radius: 8px;
 
                 h3 {
@@ -58,7 +63,7 @@ main {
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 21px;
-                    color: $main-color;
+                    color: $mainColor;
 
                     span {
                         font-weight: 400;
@@ -89,7 +94,7 @@ main {
             line-height: 40px;
     
             span {
-                color: $main-color;
+                color: $mainColor;
             }
         }
     
@@ -111,10 +116,10 @@ main {
                 width: 24px;
                 height: 24px;
                 border-radius: 50%;
-                background: $main-color;
-                color: #FFFFFF;
+                background: $mainColor;
+                color: $whiteColor;
                 text-align: center;
-                font-family: 'Sofia Sans';
+                font-family: $fontSofia;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
@@ -144,7 +149,7 @@ main {
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 27px;
-                    color: $main-color;
+                    color: $mainColor;
                 }
     
                 p {
@@ -192,7 +197,7 @@ main {
             font-weight: 400;
             font-size: 20px;
             line-height: 140%;
-            color: $main-color;
+            color: $mainColor;
         }
     }
     
@@ -217,7 +222,7 @@ main {
     }
     .form-screen {
         margin: 87px auto 0;
-        background: #fff;
+        background: $whiteColor;
         border: 1px solid #d9d9d9;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
@@ -228,17 +233,14 @@ main {
           margin: 10px 9px 8px 15px;
           width: 821px;
           height: 247px;
-          background: #fff;
+          background: $whiteColor;
           border: 1px solid #d9d9d9;
           backdrop-filter: blur(2px);
           border-radius: 10px;
       
           h3 {
             font-weight: 500;
-            font-size: 32px;
-            line-height: 130%;
-            text-align: center;
-            text-transform: uppercase;
+            @extend %title;
             margin: 29px 0 0;
           }
       
@@ -289,14 +291,14 @@ main {
           button {
             width: 180px;
             height: 57px;
-            background: #46b1de;
+            background: $mainColor;
             border-radius: 8px;
             border: none;
             text-align: center;
             font-weight: 600;
             font-size: 19px;
             line-height: 140%;
-            color: #fff;
+            color: $whiteColor;
           }
         }
       }
