@@ -1,0 +1,80 @@
+$mainColor: #46B1DE;
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: 'Roboto';
+  }
+  
+  @font-face {
+    font-family: 'Sofia Sans';
+    src: 
+      url(../../fonts/Sofia_sans/SofiaSans[wdth,wght].woff2) 
+      format("woff2");
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+    
+    &:hover {
+      color: $mainColor;
+    }
+  }
+  
+  .header_navigation {
+    a {
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+  
+  #phone:focus,
+  #name:focus {
+    background-image: none;
+    border: 2px solid $mainColor;
+  }
+  
+  .footer_navigation {
+    a, p {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  
+  // mobile
+  @media screen and (max-width: 600px) {
+    @import './mobileFooter';
+    @import './mobileMain';
+    @import './mobileHeader';
+}
+  
+// tablet
+  @media screen and (min-width: 601px) and (max-width: 1023px) {
+    @import './tabletFooter';
+    @import './tabletMain';
+    @import './tabletHeader';
+}
+  
+// laptop
+    @media screen and (min-width: 1024px) {
+    @import './laptopFooter';
+    @import './laptopMain';
+    @import './laptopHeader';
+}
+
+// burger
+
+    @media screen and (max-width: 768px) {
+    @import './burger';
+}

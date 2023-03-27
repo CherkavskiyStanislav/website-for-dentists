@@ -1,0 +1,303 @@
+$main-color: #46B1DE;
+$secondary-color: #A1C7D4;
+main {
+    .second-screen {
+        h2 {
+            margin: 148px auto 0;
+            font-size: 34px;
+            line-height: 130%;
+            text-transform: uppercase;
+            font-weight: 400;
+            text-align: center;
+
+            span {
+                font-weight: 600;
+                color: $main-color;
+            }
+
+            + p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: center;
+                margin: 5px auto 0;
+                height: 44px;
+                width: 612px;
+            }
+        }
+
+        .cards_two {
+            width: 1020px;
+            height: 396px;
+            background: $secondary-color;
+            border-radius: 12px;
+            margin: 50px auto 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .column {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+            .cards_view {
+                display: flex;
+                flex-direction: column;
+                padding: 0 20px;
+                width: 300px;
+                height: 176px;
+                background: #FFFFFF;
+                border-radius: 8px;
+
+                h3 {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0 25px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: $main-color;
+
+                    span {
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 47px;
+                        margin-right: 20px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+    .third-screen {
+        max-width: 1180px;
+        margin: 0 auto;
+        position: relative;
+    
+        h2 {
+            text-align: center;
+            margin: 90px 0 50px;
+            font-size: 34px;
+            line-height: 40px;
+    
+            span {
+                color: $main-color;
+            }
+        }
+    
+        .circle {
+            position: absolute;
+            top: 93px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 302px;
+            height: 302px;
+            border: 1px solid #1B1D1F;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .plus {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background: $main-color;
+                color: #FFFFFF;
+                text-align: center;
+                font-family: 'Sofia Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                animation-name: cirleAnimation;
+                animation-duration: 1s;
+                animation-delay: 3s;
+            }
+        }
+    
+        .tooth_row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 150px;
+            margin: 31px 0;
+    
+            &.space_between {
+                justify-content: space-between;
+            }
+    
+            .tooth_cards {
+                max-width: 338px;
+    
+                h3 {
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: $main-color;
+                }
+    
+                p {
+                    margin: 0;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+    
+            &.text_right {
+                text-align: right;
+    
+                animation-name: tooth_row_rightAnimation;
+                animation-duration: 1s;
+                animation-delay: 3s;
+            }
+    
+            &.text_left {
+                animation-name: tooth_row_leftAnimation;
+                animation-duration: 1s;
+                animation-delay: 3s;
+            }
+    
+            @keyframes tooth_row_rightAnimation {
+                0% {
+                    opacity: 0;
+                    transform: translate(-50%, -50%);
+                }
+            }
+    
+            @keyframes tooth_row_leftAnimation {
+                0% {
+                    opacity: 0;
+                    transform: translate(50%, -50%);
+                }
+            }
+        }
+    
+        .attention_icon {
+            margin: 107px auto 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            color: $main-color;
+        }
+    }
+    
+    @keyframes cirleAnimation {
+        0% {
+            top: 50%;
+            left: 50%;
+        }
+    }
+
+    .photo_screen {
+        margin: 90px auto;
+        width: 980px;
+        display: flex;
+        justify-content: space-between;
+      
+        img {
+          width: 280px;
+          height: 128px;
+          border-radius: 8px;
+        }
+    }
+    .form-screen {
+        margin: 87px auto 0;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        width: 845px;
+        height: 265px;
+      
+        .input_panel {
+          margin: 10px 9px 8px 15px;
+          width: 821px;
+          height: 247px;
+          background: #fff;
+          border: 1px solid #d9d9d9;
+          backdrop-filter: blur(2px);
+          border-radius: 10px;
+      
+          h3 {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 130%;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 29px 0 0;
+          }
+      
+          h3 + p {
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            margin: 7px 0 0;
+          }
+        }
+      
+        .input_botton {
+          margin-top: 44px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+      
+          #name {
+            width: 233px;
+            height: 57px;
+            background: rgba(217, 217, 217, 0.71);
+            border-radius: 8px;
+            border: none;
+            background-image: url("../../img/figma_imge/user\ 4.svg");
+            background-repeat: no-repeat;
+            background-position: 5% 50%;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 140%;
+            color: rgba(27, 29, 31, 0.51);
+          }
+      
+          #phone {
+            width: 233px;
+            height: 57px;
+            background: rgba(217, 217, 217, 0.71);
+            border-radius: 8px;
+            border: none;
+            background-image: url("../../img/figma_imge/phone\ 4.svg");
+            background-repeat: no-repeat;
+            background-position: 5% 50%;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 140%;
+            color: rgba(27, 29, 31, 0.51);
+          }
+      
+          button {
+            width: 180px;
+            height: 57px;
+            background: #46b1de;
+            border-radius: 8px;
+            border: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 140%;
+            color: #fff;
+          }
+        }
+      }
+}

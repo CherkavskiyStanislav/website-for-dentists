@@ -1,0 +1,236 @@
+main {
+    .second-screen {
+        h2 {
+          margin: 50px auto 0;
+          font-size: 26px;
+          line-height: 29px;
+          text-transform: uppercase;
+          font-weight: 400;
+          text-align: center;
+      
+          span {
+            font-weight: 600;
+            color: #46B1DE;
+          }
+        }
+      
+        h2 + p {
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 17px;
+          text-align: center;
+          margin: 5px auto 0;
+          width: 550px;
+        }
+      
+        .cards_two {
+          width: 500px;
+          padding: 10px;
+          background: #A1C7D4;
+          border-radius: 12px;
+          margin: 20px auto 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      
+          .column {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+          }
+      
+          .cards_view {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 480px;
+            height: 80px;
+            background: #FFFFFF;
+            border-radius: 8px;
+      
+            h3 {
+              display: flex;
+              align-items: center;
+              margin: 0;
+              width: 400px;
+              font-weight: 700;
+              font-size: 15px;
+              line-height: 16px;
+              color: #46B1DE;
+      
+              span {
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 40px;
+                margin-right: 10px;
+              }
+            }
+      
+            p {
+              width: 400px;
+              margin: 0;
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 15px;
+            }
+          }
+        }
+    }
+
+    .third-screen {
+        h2 {
+          text-align: center;
+          margin: 50px auto 20px;
+          font-size: 29px;
+          line-height: 29px;
+          font-weight: 400;
+          span {
+            color: #46B1DE;
+          }
+        }
+      
+        .tooth_row {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+      
+          .tooth_cards {
+            width: 300px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 5px;
+      
+            h3 {
+              margin: 0;
+              font-weight: 700;
+              font-size: 15px;
+              line-height: 16px;
+              color: #46B1DE;
+            }
+      
+            p {
+              margin: 0;
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 15px;
+            }
+          }
+        }
+      
+        .attention_icon {
+          display: none;
+        }
+    }
+
+    .form-screen {
+        margin: 30px auto 0;
+        min-width: 590px;
+        height: 200px;
+      
+        .input_panel {
+          margin: 10px;
+          min-width: 560px;
+          height: 180px;
+      
+          border: 1px solid #D9D9D9;
+          border-radius: 10px;
+      
+          h3 {
+            font-size: 26px;
+            line-height: 29px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 29px 0 0;
+      
+            + p {
+              font-size: 15px;
+              line-height: 17px;
+              text-align: center;
+              margin: 7px 0 0;
+            }
+          }
+      
+          .input_botton {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+      
+            #name {
+              width: 210px;
+              height: 57px;
+              background: rgba(217, 217, 217, 0.71);
+              border-radius: 8px;
+              border: none;
+              background-image: url("../../img/figma_imge/user\ 4.svg");
+              background-repeat: no-repeat;
+              background-position: 5% 50%;
+              font-weight: 600;
+              font-size: 17px;
+              line-height: 140%;
+              color: rgba(27, 29, 31, 0.51);
+      
+              &:focus {
+                background-image: none;
+              }
+            }
+      
+            #phone {
+              width: 210px;
+              height: 57px;
+              background: rgba(217, 217, 217, 0.71);
+              border-radius: 8px;
+              border: none;
+              background-image: url("../../img/figma_imge/phone\ 4.svg");
+              background-repeat: no-repeat;
+              background-position: 5% 50%;
+              font-weight: 600;
+              font-size: 17px;
+              line-height: 140%;
+              color: rgba(27, 29, 31, 0.51);
+      
+              &:focus {
+                background-image: none;
+              }
+            }
+      
+            button {
+              width: 130px;
+              height: 57px;
+              background: #46B1DE;
+              border-radius: 8px;
+              border: none;
+              text-align: center;
+              font-weight: 600;
+              font-size: 17px;
+              line-height: 140%;
+              color: #FFFFFF;
+            }
+          }
+        }
+    }
+    .circle {
+        display: none;
+    }
+    .photo_child {
+        display: none;
+      }
+      
+      .photo_screen {
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-evenly;
+      
+        img {
+          max-height: 100px;
+          border-radius: 8px;
+        }
+      }      
+}

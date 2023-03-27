@@ -1,0 +1,1607 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: "Roboto";
+}
+
+@font-face {
+  font-family: "Sofia Sans";
+  src: url(../../fonts/Sofia_sans/SofiaSans[wdth,wght].woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #46B1DE;
+}
+
+.header_navigation a:hover {
+  color: #46B1DE;
+}
+
+#phone:focus,
+#name:focus {
+  background-image: none;
+  border: 2px solid #46B1DE;
+}
+
+.footer_navigation a:hover, .footer_navigation p:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    background: linear-gradient(180deg, #fff 0%, #0680AA 100%);
+    padding: 30px 8px 0;
+    height: 100vh;
+    position: relative;
+    color: #0F2D4A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  footer a {
+    color: #0F2D4A;
+  }
+  footer .secondlogo {
+    display: grid;
+    grid-template: 64.91px/55px 247px;
+    align-items: center;
+  }
+  footer .secondlogo h2 {
+    margin: 0 5px;
+    font-family: "Sofia Sans";
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  footer .secondlogo h2 span {
+    font-size: 19px;
+    line-height: 27px;
+    text-transform: none;
+  }
+  footer .footerinfo {
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto";
+    font-size: 14px;
+  }
+  footer .footer_navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  footer .footer_navigation > a {
+    color: #0F2D4A;
+  }
+  footer .footer_lang a:first-child {
+    font-weight: 600;
+  }
+  footer .footer_lang a:last-child {
+    position: relative;
+    left: 7px;
+  }
+  footer .footer_lang a:last-child::before {
+    position: absolute;
+    content: "|";
+    top: -1px;
+    left: -7px;
+  }
+  footer .footer_hours p {
+    font-weight: 600;
+  }
+  footer .footer_column__second {
+    color: #FFF;
+  }
+  footer .footer_column__second h3 {
+    margin: 44px 0 26.48px 0;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  footer .footer_column__second address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 17px;
+    line-height: 23px;
+    font-style: normal;
+  }
+  footer .footer_column__second address .social_media {
+    display: none;
+  }
+  footer .footer_column__second address p {
+    margin: 0 0 13.04px;
+    font-size: 17.1613px;
+    line-height: 135%;
+  }
+  footer .footer_column__second address > a {
+    position: relative;
+    color: #FFF;
+    padding-top: 13.04px;
+    font-size: 17.1613px;
+    line-height: 135%;
+    left: 30px;
+  }
+  footer .footer_column__second .tell::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../../img/figma_imge/footer_phone.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    top: 13px;
+    left: -30px;
+    width: 25px;
+    height: 25px;
+  }
+  footer .footer_column__second .inst::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../../img/figma_imge/footer_instagram.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    top: 13px;
+    left: -30px;
+    width: 25px;
+    height: 25px;
+  }
+  footer .footer_column__second .email::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../../img/figma_imge/footer_email.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    top: 13px;
+    left: -30px;
+    width: 25px;
+    height: 25px;
+  }
+  footer .footer_column__second .copyright {
+    font-size: 11px;
+    line-height: 15px;
+    line-height: 130%;
+    text-align: right;
+    padding-top: 36.21px;
+  }
+
+  main .second-screen {
+    display: none;
+  }
+  main .third-screen {
+    background: linear-gradient(180deg, #A1C7D4 0%, #fff 100%);
+    padding: 10px 8px 0;
+    color: #0F2D4A;
+  }
+  main .third-screen h2 {
+    text-align: center;
+    margin: 10px auto 10px;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+  main .third-screen h2 span {
+    color: #0680AA;
+  }
+  main .third-screen .circle {
+    display: none;
+  }
+  main .third-screen .attention_icon {
+    display: none;
+  }
+  main .third-screen .tooth_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .third-screen .tooth_row .tooth_cards {
+    max-width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  main .third-screen .tooth_row .tooth_cards h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    color: #0680AA;
+  }
+  main .third-screen .tooth_row .tooth_cards p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+  }
+  main .form-screen {
+    padding: 10px 8px 0;
+  }
+  main .form-screen .input_panel h3 {
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 19px 0 0;
+  }
+  main .form-screen .input_panel h3 + p {
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    margin: 7px 0 0;
+  }
+  main .form-screen .input_botton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+  }
+  main .form-screen .input_botton #name, main .form-screen .input_botton #phone {
+    height: 57px;
+    margin: 0 20px;
+    background: rgba(217, 217, 217, 0.71);
+    border-radius: 8px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 140%;
+    color: rgba(27, 29, 31, 0.51);
+  }
+  main .form-screen .input_botton #name::placeholder, main .form-screen .input_botton #phone::placeholder {
+    color: rgba(27, 29, 31, 0.51);
+  }
+  main .form-screen .input_botton #name:focus, main .form-screen .input_botton #phone:focus {
+    background-image: none;
+  }
+  main .form-screen .input_botton #name#name, main .form-screen .input_botton #phone#name {
+    background-image: url("../../../img/figma_imge/user 4.svg");
+  }
+  main .form-screen .input_botton #name#phone, main .form-screen .input_botton #phone#phone {
+    background-image: url("../../../img/figma_imge/phone 4.svg");
+  }
+  main .form-screen .input_botton button {
+    width: 130px;
+    height: 57px;
+    margin: 0 auto;
+    background: #46B1DE;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+  main .photo_screen {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  main .photo_screen img {
+    max-height: 100px;
+    max-width: 220px;
+    border-radius: 8px;
+  }
+
+  header {
+    background-image: url("../../../img/figma_imge/background_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 30px;
+    position: relative;
+  }
+  header .header_panel {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav {
+    display: none;
+  }
+  header .language {
+    display: none;
+  }
+  header .header_logo {
+    display: grid;
+    grid-template: 39.16px/33px 150px;
+  }
+  header .logoimg {
+    width: 33.39px;
+    height: 34.67px;
+  }
+  header h1 {
+    margin: 0;
+    font-family: "Sofia Sans";
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #46B1DE;
+  }
+  header h1 span {
+    font-size: 12px;
+    text-transform: none;
+  }
+  header .header_tel a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+  header .header_tel a::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../../img/figma_imge/phone.svg");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    top: 0;
+    left: -15px;
+    height: 18px;
+    width: 18px;
+  }
+  header h2 {
+    white-space: pre-line;
+    margin: 46.84px 0 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  header h2 span {
+    color: #46B1DE;
+  }
+  header p {
+    margin: 5px 19px 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+  }
+  header .button {
+    margin: 10px 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  header .button .call_butt {
+    color: #fff;
+    background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
+    box-shadow: 0px 1.14444px 5.72222px #46B1DE;
+    border-radius: 4.57778px;
+  }
+  header .button .serv_butt {
+    color: #46B1DE;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 1px solid #DDE0DC;
+    box-shadow: 0px 2px 10px #DDE0DC;
+    border-radius: 8px;
+  }
+  header .lady {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translate(-55%, 0%);
+    max-height: 199px;
+  }
+  header .cards_one {
+    display: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  footer {
+    background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);
+    padding: 30px 15px 0;
+    position: relative;
+    color: #0F2D4A;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer a {
+    color: #0F2D4A;
+  }
+  footer .secondlogo {
+    display: grid;
+    grid-template: 64.91px/55px 247px;
+    align-items: center;
+  }
+  footer .secondlogo h2 {
+    margin: 0 5px;
+    font-family: "Sofia Sans";
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  footer .secondlogo h2 span {
+    font-size: 19px;
+    line-height: 27px;
+    text-transform: none;
+  }
+  footer .footerinfo {
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto";
+    font-size: 14px;
+  }
+  footer .footerinfo .footer_navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  footer .footerinfo .footer_navigation > a {
+    color: #0F2D4A;
+  }
+  footer .footerinfo .footer_lang a:first-child {
+    font-weight: 600;
+  }
+  footer .footerinfo .footer_lang a:last-child {
+    position: relative;
+    left: 7px;
+  }
+  footer .footerinfo .footer_lang a:last-child::before {
+    position: absolute;
+    content: "|";
+    top: -1px;
+    left: -7px;
+  }
+  footer .footerinfo .footer_hours p {
+    font-weight: 600;
+  }
+  footer .footer_column__second {
+    color: #FFF;
+  }
+  footer .footer_column__second h3 {
+    margin: 8px 0 26.48px 0;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  footer address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 17px;
+    line-height: 23px;
+    font-style: normal;
+  }
+  footer address p {
+    margin: 0 0 13.04px;
+    font-size: 17.1613px;
+    line-height: 135%;
+  }
+  footer address > a {
+    position: relative;
+    color: #FFF;
+    padding-top: 13.04px;
+    font-size: 17.1613px;
+    line-height: 135%;
+    left: 30px;
+  }
+  footer .tell,
+footer .inst,
+footer .email {
+    position: relative;
+    color: #FFF;
+    padding-top: 13.04px;
+    font-size: 17.1613px;
+    line-height: 135%;
+    left: 30px;
+  }
+  footer .tell::before,
+footer .inst::before,
+footer .email::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 20px;
+    top: 13px;
+    left: -30px;
+    width: 25px;
+    height: 25px;
+  }
+  footer .tell.tell::before,
+footer .inst.tell::before,
+footer .email.tell::before {
+    background-image: url("../../img/figma_imge/footer_phone.svg");
+  }
+  footer .tell.inst::before,
+footer .inst.inst::before,
+footer .email.inst::before {
+    background-image: url("../../img/figma_imge/footer_instagram.svg");
+  }
+  footer .tell.email::before,
+footer .inst.email::before,
+footer .email.email::before {
+    background-image: url("../../img/figma_imge/footer_email.svg");
+  }
+  footer .social_media {
+    display: none;
+  }
+
+  main .second-screen h2 {
+    margin: 50px auto 0;
+    font-size: 26px;
+    line-height: 29px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+  }
+  main .second-screen h2 span {
+    font-weight: 600;
+    color: #46B1DE;
+  }
+  main .second-screen h2 + p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    margin: 5px auto 0;
+    width: 550px;
+  }
+  main .second-screen .cards_two {
+    width: 500px;
+    padding: 10px;
+    background: #A1C7D4;
+    border-radius: 12px;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .second-screen .cards_two .column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .second-screen .cards_two .cards_view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 80px;
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
+  main .second-screen .cards_two .cards_view h3 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 400px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    color: #46B1DE;
+  }
+  main .second-screen .cards_two .cards_view h3 span {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    margin-right: 10px;
+  }
+  main .second-screen .cards_two .cards_view p {
+    width: 400px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  main .third-screen h2 {
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 29px;
+    line-height: 29px;
+    font-weight: 400;
+  }
+  main .third-screen h2 span {
+    color: #46B1DE;
+  }
+  main .third-screen .tooth_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .third-screen .tooth_row .tooth_cards {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  main .third-screen .tooth_row .tooth_cards h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    color: #46B1DE;
+  }
+  main .third-screen .tooth_row .tooth_cards p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  main .third-screen .attention_icon {
+    display: none;
+  }
+  main .form-screen {
+    margin: 30px auto 0;
+    min-width: 590px;
+    height: 200px;
+  }
+  main .form-screen .input_panel {
+    margin: 10px;
+    min-width: 560px;
+    height: 180px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+  }
+  main .form-screen .input_panel h3 {
+    font-size: 26px;
+    line-height: 29px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 29px 0 0;
+  }
+  main .form-screen .input_panel h3 + p {
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    margin: 7px 0 0;
+  }
+  main .form-screen .input_panel .input_botton {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .form-screen .input_panel .input_botton #name {
+    width: 210px;
+    height: 57px;
+    background: rgba(217, 217, 217, 0.71);
+    border-radius: 8px;
+    border: none;
+    background-image: url("../../img/figma_imge/user 4.svg");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 140%;
+    color: rgba(27, 29, 31, 0.51);
+  }
+  main .form-screen .input_panel .input_botton #name:focus {
+    background-image: none;
+  }
+  main .form-screen .input_panel .input_botton #phone {
+    width: 210px;
+    height: 57px;
+    background: rgba(217, 217, 217, 0.71);
+    border-radius: 8px;
+    border: none;
+    background-image: url("../../img/figma_imge/phone 4.svg");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 140%;
+    color: rgba(27, 29, 31, 0.51);
+  }
+  main .form-screen .input_panel .input_botton #phone:focus {
+    background-image: none;
+  }
+  main .form-screen .input_panel .input_botton button {
+    width: 130px;
+    height: 57px;
+    background: #46B1DE;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+  main .circle {
+    display: none;
+  }
+  main .photo_child {
+    display: none;
+  }
+  main .photo_screen {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  main .photo_screen img {
+    max-height: 100px;
+    border-radius: 8px;
+  }
+
+  header {
+    background-image: url("../../img/figma_imge/background_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 30px;
+    position: relative;
+  }
+  header .header_panel {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .header_panel .header_logo {
+    display: grid;
+    grid-template: 39.16px/33px 150px;
+  }
+  header .header_panel .header_logo .logoimg {
+    width: 33.39px;
+    height: 34.67px;
+  }
+  header .header_panel h1 {
+    margin: 0;
+    font-family: "Sofia Sans";
+    font-size: 17px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #46B1DE;
+  }
+  header .header_panel h1 span {
+    font-size: 12px;
+    text-transform: none;
+  }
+  header .header_panel .header_tel a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    right: 30px;
+  }
+  header .header_panel .header_tel a::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/figma_imge/phone.svg");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    top: 0;
+    left: -20px;
+    height: 18px;
+    width: 18px;
+  }
+  header .header_panel .language {
+    display: none;
+  }
+  header .header_panel nav {
+    width: 200px;
+    height: 19px;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  header .header_panel nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  header .animation h2 {
+    white-space: pre-line;
+    margin: 46.84px 0 0;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  header .animation h2 span {
+    color: #46B1DE;
+  }
+  header .animation p {
+    width: 500px;
+    margin: 10px auto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+  }
+  header .animation .button {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+  }
+  header .animation .button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  header .animation .button .call_butt {
+    color: #fff;
+    background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
+    box-shadow: 0px 1.14444px 5.72222px #46B1DE;
+    border-radius: 4.57778px;
+  }
+  header .animation .button .serv_butt {
+    color: #46B1DE;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 1px solid #DDE0DC;
+    box-shadow: 0px 2px 10px #DDE0DC;
+    border-radius: 8px;
+  }
+  header .lady {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translate(-55%, 0%);
+    max-height: 280px;
+  }
+  header .cards_one {
+    margin: 330px auto 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  header .cards_one .cards_style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    width: 190px;
+    height: 70px;
+    padding: 5px;
+    background: #FFFFFF;
+    border: 1px solid #D8E1E1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  header .cards_one .cards_style h3 {
+    font-size: 45px;
+    margin: 0;
+    font-weight: normal;
+    color: #46B1DE;
+  }
+  header .cards_one .cards_style p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+    color: #0F2D4A;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    line-height: 135%;
+  }
+  footer .secondlogo {
+    display: grid;
+    grid-template: 91px/78px 347px;
+    align-items: center;
+    margin-top: 60px;
+  }
+  footer .secondlogo .secondlogoimg {
+    width: 77.57px;
+    height: 80.56px;
+    padding-right: 7px;
+  }
+  footer .secondlogo h2 {
+    margin: 0;
+    font-family: "Sofia Sans";
+    font-size: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  footer .secondlogo h2 span {
+    font-size: 26.8525px;
+    line-height: 140%;
+    text-transform: none;
+  }
+  footer .footerinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  footer .footerinfo .footer_navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer .footerinfo .footer_navigation > a {
+    color: #0F2D4A;
+  }
+  footer .footerinfo .footer_lang a:first-child {
+    font-weight: 600;
+  }
+  footer .footerinfo .footer_lang a:last-child {
+    position: relative;
+    left: 10px;
+  }
+  footer .footerinfo .footer_lang a:last-child::before {
+    position: absolute;
+    content: "|";
+    top: -3px;
+    left: -10px;
+  }
+  footer .footerinfo .footer_hours p {
+    margin: 67px 0 0;
+    font-weight: 600;
+  }
+  footer .footer_column__second {
+    color: #fff;
+  }
+  footer .footer_column__second h3 {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 60px 0 0;
+  }
+  footer .footer_column__second address {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer_column__second address p {
+    margin: 0 0 15px;
+  }
+  footer .footer_column__second address p + p {
+    margin: 0 0 20px;
+  }
+  footer .footer_column__second address > a {
+    position: relative;
+    color: #fff;
+    left: 40px;
+  }
+  footer .footer_column__second address > a:hover::after {
+    position: absolute;
+    content: "_____________________";
+    top: 8px;
+    left: 0px;
+  }
+  footer .footer_column__second .inst {
+    padding-bottom: 18px;
+  }
+  footer .footer_column__second .inst:hover::after {
+    position: absolute;
+    content: "__________";
+    top: 8px;
+    left: 0px;
+  }
+  footer .footer_column__second .tell::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/figma_imge/footer_phone.svg");
+    background-repeat: no-repeat;
+    background-size: 28px;
+    top: 0;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+  }
+  footer .footer_column__second .inst::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/figma_imge/footer_instagram.svg");
+    background-repeat: no-repeat;
+    background-size: 28px;
+    top: 0;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+  }
+  footer .footer_column__second .email::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/figma_imge/footer_email.svg");
+    background-repeat: no-repeat;
+    background-size: 28px;
+    top: 0;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+  }
+  footer .footer_column__second .social_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 22px;
+    margin-top: 9px;
+  }
+  footer .footer_column__second .copyright {
+    padding-top: 12px;
+    font-size: 13px;
+    line-height: 130%;
+    text-align: right;
+  }
+
+  main .second-screen h2 {
+    margin: 148px auto 0;
+    font-size: 34px;
+    line-height: 130%;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+  }
+  main .second-screen h2 span {
+    font-weight: 600;
+    color: #46B1DE;
+  }
+  main .second-screen h2 + p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    margin: 5px auto 0;
+    height: 44px;
+    width: 612px;
+  }
+  main .second-screen .cards_two {
+    width: 1020px;
+    height: 396px;
+    background: #A1C7D4;
+    border-radius: 12px;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main .second-screen .cards_two .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  main .second-screen .cards_two .cards_view {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 300px;
+    height: 176px;
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
+  main .second-screen .cards_two .cards_view h3 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 25px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #46B1DE;
+  }
+  main .second-screen .cards_two .cards_view h3 span {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    margin-right: 20px;
+  }
+  main .second-screen .cards_two .cards_view p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  main .third-screen {
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+  }
+  main .third-screen h2 {
+    text-align: center;
+    margin: 90px 0 50px;
+    font-size: 34px;
+    line-height: 40px;
+  }
+  main .third-screen h2 span {
+    color: #46B1DE;
+  }
+  main .third-screen .circle {
+    position: absolute;
+    top: 93px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 302px;
+    height: 302px;
+    border: 1px solid #1B1D1F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .third-screen .circle .plus {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #46B1DE;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Sofia Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    animation-name: cirleAnimation;
+    animation-duration: 1s;
+    animation-delay: 3s;
+  }
+  main .third-screen .tooth_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 150px;
+    margin: 31px 0;
+  }
+  main .third-screen .tooth_row.space_between {
+    justify-content: space-between;
+  }
+  main .third-screen .tooth_row .tooth_cards {
+    max-width: 338px;
+  }
+  main .third-screen .tooth_row .tooth_cards h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #46B1DE;
+  }
+  main .third-screen .tooth_row .tooth_cards p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  main .third-screen .tooth_row.text_right {
+    text-align: right;
+    animation-name: tooth_row_rightAnimation;
+    animation-duration: 1s;
+    animation-delay: 3s;
+  }
+  main .third-screen .tooth_row.text_left {
+    animation-name: tooth_row_leftAnimation;
+    animation-duration: 1s;
+    animation-delay: 3s;
+  }
+  @keyframes tooth_row_rightAnimation {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes tooth_row_leftAnimation {
+    0% {
+      opacity: 0;
+      transform: translate(50%, -50%);
+    }
+  }
+  main .third-screen .attention_icon {
+    margin: 107px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #46B1DE;
+  }
+  @keyframes cirleAnimation {
+    0% {
+      top: 50%;
+      left: 50%;
+    }
+  }
+  main .photo_screen {
+    margin: 90px auto;
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .photo_screen img {
+    width: 280px;
+    height: 128px;
+    border-radius: 8px;
+  }
+  main .form-screen {
+    margin: 87px auto 0;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 845px;
+    height: 265px;
+  }
+  main .form-screen .input_panel {
+    margin: 10px 9px 8px 15px;
+    width: 821px;
+    height: 247px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+  }
+  main .form-screen .input_panel h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 29px 0 0;
+  }
+  main .form-screen .input_panel h3 + p {
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    margin: 7px 0 0;
+  }
+  main .form-screen .input_botton {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .form-screen .input_botton #name {
+    width: 233px;
+    height: 57px;
+    background: rgba(217, 217, 217, 0.71);
+    border-radius: 8px;
+    border: none;
+    background-image: url("../../img/figma_imge/user 4.svg");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 140%;
+    color: rgba(27, 29, 31, 0.51);
+  }
+  main .form-screen .input_botton #phone {
+    width: 233px;
+    height: 57px;
+    background: rgba(217, 217, 217, 0.71);
+    border-radius: 8px;
+    border: none;
+    background-image: url("../../img/figma_imge/phone 4.svg");
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 140%;
+    color: rgba(27, 29, 31, 0.51);
+  }
+  main .form-screen .input_botton button {
+    width: 180px;
+    height: 57px;
+    background: #46b1de;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 140%;
+    color: #fff;
+  }
+
+  .header {
+    background-image: url("../../../img/figma_imge/background_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 683px;
+    padding-top: 64px;
+    position: relative;
+  }
+  .header .first-screen {
+    position: relative;
+    max-width: 1180px;
+    height: 683px;
+    margin: 0 auto;
+  }
+  .header .header_panel {
+    height: 91px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .header_logo {
+    display: grid;
+    grid-template: 91px/78px 347.22px;
+  }
+  .header .logoimg {
+    height: 81px;
+    width: 78px;
+    padding-right: 10px;
+  }
+  .header h1 {
+    margin: 0;
+    font-family: "Sofia Sans";
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #46B1DE;
+    text-align: left;
+    font-weight: 400;
+  }
+  .header h1 span {
+    font-size: 27px;
+    text-transform: none;
+  }
+  .header nav {
+    width: 350px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 18px;
+  }
+  .header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header .header_tel a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+    font-size: 16px;
+    width: 174px;
+    height: 24px;
+    left: 30px;
+  }
+  .header .header_tel a::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/figma_imge/phone.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    top: 0;
+    left: -25px;
+    height: 18px;
+    width: 18px;
+  }
+  .header .language {
+    padding-top: 18px;
+    width: 77px;
+    height: 23px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .header .language a:first-child {
+    font-weight: 600;
+  }
+  .header .language a:last-child {
+    position: relative;
+    left: 10px;
+  }
+  .header .language a:last-child::before {
+    position: absolute;
+    content: "|";
+    top: 0;
+    left: -10px;
+  }
+  .header .animation {
+    animation-name: first-screenAnimation;
+    animation-duration: 1s;
+  }
+  .header .animation h2 {
+    white-space: pre-line;
+    margin: 30px 0 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.1em;
+  }
+  .header .animation h2 span {
+    color: #46B1DE;
+  }
+  .header .animation p {
+    margin: 30px 0 0;
+    font-size: 16px;
+    line-height: 140%;
+    width: 464px;
+    height: 66px;
+  }
+  .header .animation .button {
+    margin: 48px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 480px;
+  }
+  .header .animation .button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 60px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+  }
+  @keyframes first-screenAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .header .lady {
+    position: absolute;
+    bottom: 64px;
+    right: 0;
+  }
+  .header .call_butt {
+    color: #fff;
+    background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
+    box-shadow: 0px 1.14444px 5.72222px #46B1DE;
+    border-radius: 4.57778px;
+  }
+  .header .serv_butt {
+    color: #46B1DE;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 1px solid #DDE0DC;
+    box-shadow: 0px 2px 10px #DDE0DC;
+    border-radius: 8px;
+  }
+  .header .cards_one {
+    margin: 54px auto 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+  }
+  .header .cards_one .cards_style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    width: 280px;
+    height: 120px;
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid #D8E1E1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  .header .cards_one .cards_style h3 {
+    font-size: 65px;
+    margin: 0;
+    font-weight: normal;
+    color: #46B1DE;
+  }
+  .header .cards_one .cards_style p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  @keyframes cardsAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .burger {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    left: 90%;
+    top: 59px;
+    cursor: pointer;
+  }
+  .burger::before, .burger::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.3s linear;
+  }
+  .burger::before {
+    top: 4px;
+  }
+  .burger::after {
+    bottom: 4px;
+  }
+  .burger:focus span {
+    width: 0;
+  }
+  .burger:focus::before {
+    background-color: #46B1DE;
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .burger:focus::after {
+    bottom: 9px;
+    background-color: #46B1DE;
+    transform: rotate(-45deg);
+  }
+
+  .animation_menu {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #000;
+  }
+}
