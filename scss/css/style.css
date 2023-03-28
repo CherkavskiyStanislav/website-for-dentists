@@ -148,7 +148,7 @@ a:hover {
   footer .footer_column__second .tell::before {
     position: absolute;
     content: "";
-    background-image: url("../../../img/figma_imge/footer_phone.svg");
+    background-image: url("../../img/figma_imge/footer_phone.svg");
     background-repeat: no-repeat;
     background-size: 20px;
     top: 13px;
@@ -159,7 +159,7 @@ a:hover {
   footer .footer_column__second .inst::before {
     position: absolute;
     content: "";
-    background-image: url("../../../img/figma_imge/footer_instagram.svg");
+    background-image: url("../../img/figma_imge/footer_instagram.svg");
     background-repeat: no-repeat;
     background-size: 20px;
     top: 13px;
@@ -170,7 +170,7 @@ a:hover {
   footer .footer_column__second .email::before {
     position: absolute;
     content: "";
-    background-image: url("../../../img/figma_imge/footer_email.svg");
+    background-image: url("../../img/figma_imge/footer_email.svg");
     background-repeat: no-repeat;
     background-size: 20px;
     top: 13px;
@@ -284,10 +284,10 @@ a:hover {
     background-image: none;
   }
   main .form-screen .input_botton #name#name, main .form-screen .input_botton #phone#name {
-    background-image: url("../../../img/figma_imge/user 4.svg");
+    background-image: url("../../img/figma_imge/user 4.svg");
   }
   main .form-screen .input_botton #name#phone, main .form-screen .input_botton #phone#phone {
-    background-image: url("../../../img/figma_imge/phone 4.svg");
+    background-image: url("../../img/figma_imge/phone 4.svg");
   }
   main .form-screen .input_botton button {
     width: 130px;
@@ -366,7 +366,7 @@ a:hover {
   header .header_tel a::before {
     position: absolute;
     content: "";
-    background-image: url("../../../img/figma_imge/phone.svg");
+    background-image: url("../../img/figma_imge/phone.svg");
     background-repeat: no-repeat;
     background-size: 12px;
     top: 0;
