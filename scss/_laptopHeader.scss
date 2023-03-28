@@ -193,6 +193,8 @@ header {
         position: relative;
         display: flex;
         justify-content: space-around;
+        animation-name: cardsAnimation;
+        animation-duration: 2s;
     
         .cards_style {
             display: flex;
@@ -220,18 +222,17 @@ header {
                 line-height: 16px;
             }
         }
-    
-        @keyframes cardsAnimation {
-            0% {
-                opacity: 0;
-                transform: translateX(-100%);
-            }
-            50% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+    }
+    @keyframes cardsAnimation {
+        0% {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
         }
     }
 }

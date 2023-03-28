@@ -1220,6 +1220,17 @@ footer .email.email::before {
   main .third-screen .tooth_row .tooth_cards {
     max-width: 338px;
   }
+  main .third-screen .tooth_row .tooth_cards.text_right {
+    text-align: right;
+    animation-name: tooth_row_rightAnimation;
+    animation-duration: 1s;
+    animation-delay: 3s;
+  }
+  main .third-screen .tooth_row .tooth_cards.text_left {
+    animation-name: tooth_row_leftAnimation;
+    animation-duration: 1s;
+    animation-delay: 3s;
+  }
   main .third-screen .tooth_row .tooth_cards h3 {
     margin: 0;
     font-weight: 600;
@@ -1232,29 +1243,6 @@ footer .email.email::before {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-  }
-  main .third-screen .tooth_row.text_right {
-    text-align: right;
-    animation-name: tooth_row_rightAnimation;
-    animation-duration: 1s;
-    animation-delay: 3s;
-  }
-  main .third-screen .tooth_row.text_left {
-    animation-name: tooth_row_leftAnimation;
-    animation-duration: 1s;
-    animation-delay: 3s;
-  }
-  @keyframes tooth_row_rightAnimation {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -50%);
-    }
-  }
-  @keyframes tooth_row_leftAnimation {
-    0% {
-      opacity: 0;
-      transform: translate(50%, -50%);
-    }
   }
   main .third-screen .attention_icon {
     margin: 107px auto 0;
@@ -1270,6 +1258,18 @@ footer .email.email::before {
     0% {
       top: 50%;
       left: 50%;
+    }
+  }
+  @keyframes tooth_row_rightAnimation {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @keyframes tooth_row_leftAnimation {
+    0% {
+      opacity: 0;
+      transform: translate(50%, -50%);
     }
   }
   main .photo_screen {
@@ -1530,6 +1530,8 @@ footer .email.email::before {
     position: relative;
     display: flex;
     justify-content: space-around;
+    animation-name: cardsAnimation;
+    animation-duration: 2s;
   }
   header .cards_one .cards_style {
     display: flex;

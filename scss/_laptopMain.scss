@@ -143,6 +143,20 @@ main {
     
             .tooth_cards {
                 max-width: 338px;
+
+                &.text_right {
+                    text-align: right;
+        
+                    animation-name: tooth_row_rightAnimation;
+                    animation-duration: 1s;
+                    animation-delay: 3s;
+                }
+        
+                &.text_left {
+                    animation-name: tooth_row_leftAnimation;
+                    animation-duration: 1s;
+                    animation-delay: 3s;
+                }
     
                 h3 {
                     margin: 0;
@@ -157,34 +171,6 @@ main {
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 19px;
-                }
-            }
-    
-            &.text_right {
-                text-align: right;
-    
-                animation-name: tooth_row_rightAnimation;
-                animation-duration: 1s;
-                animation-delay: 3s;
-            }
-    
-            &.text_left {
-                animation-name: tooth_row_leftAnimation;
-                animation-duration: 1s;
-                animation-delay: 3s;
-            }
-    
-            @keyframes tooth_row_rightAnimation {
-                0% {
-                    opacity: 0;
-                    transform: translate(-50%, -50%);
-                }
-            }
-    
-            @keyframes tooth_row_leftAnimation {
-                0% {
-                    opacity: 0;
-                    transform: translate(50%, -50%);
                 }
             }
         }
@@ -205,6 +191,20 @@ main {
         0% {
             top: 50%;
             left: 50%;
+        }
+    }
+
+    @keyframes tooth_row_rightAnimation {
+        0% {
+            opacity: 0;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @keyframes tooth_row_leftAnimation {
+        0% {
+            opacity: 0;
+            transform: translate(50%, -50%);
         }
     }
 
